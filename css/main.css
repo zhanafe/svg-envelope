@@ -1,0 +1,68 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2f0d73;
+  -webkit-animation: bgColor 7500ms linear infinite;
+          animation: bgColor 7500ms linear infinite;
+}
+
+#frame {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+#frame path {
+  fill: none;
+  stroke: #6450ff;
+  stroke-width: 0.5px;
+  -webkit-animation: offsetDash 3000ms linear infinite;
+          animation: offsetDash 3000ms linear infinite;
+}
+
+@-webkit-keyframes offsetDash {
+  50% {
+    stroke: #ff6464;
+  }
+  100% {
+    stroke: #6450ff;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes offsetDash {
+  50% {
+    stroke: #ff6464;
+  }
+  100% {
+    stroke: #6450ff;
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes bgColor {
+  50% {
+    background-color: #66aacc;
+  }
+  100% {
+    background-color: #2f0d73;
+  }
+}
+@keyframes bgColor {
+  50% {
+    background-color: #66aacc;
+  }
+  100% {
+    background-color: #2f0d73;
+  }
+}

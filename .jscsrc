@@ -1,0 +1,8 @@
+{
+  "preset": "google",
+  "disallowSpacesInAnonymousFunctionExpression": null,
+  "disallowMultipleVarDecl": null,
+  "requireCapitalizedConstructors": true,
+  "validateLineBreaks": "LF",
+  "validateIndentation": 2
+}
